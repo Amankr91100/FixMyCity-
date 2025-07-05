@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+<header>
+    <div class="heading">
+        <h1>🏘️ fixMyCity</h1>
+        <p>Report and track community issues in your area</p>
+    </div>
+</header>
+
+<div class="container">
+     <section class="report-section">
+        <h2>Report a new Issue</h2>
+          <form id="issueForm" class="issue-form">
+                <div class="form-group">
+                    <label for="issueType">Issue Type:</label>
+                    <select id="issueType" required>
+                        <option value="">Select Issue Type</option>
+                        <option value="street-light">🔦 Street Light Issue</option>
+                        <option value="garbage">🗑️ Garbage Issue</option>
+                        <option value="road">🛣️ Road Problem</option>
+                        <option value="water">💧 Water Supply Issue</option>
+                        <option value="drainage">🌊 Drainage Problem</option>
+                        <option value="electricity">⚡ Electricity Issue</option>
+                        <option value="other">🔧 Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Description">Description:</label>
+                    <textarea type="text" id="Description" placeholder="Describe the issue in detail" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="imageUpload">Upload Image:</label>
+                    <input type="file" id="imageUpload" accept="image/*" required>
+                    <div id="imagePreview" class="image-preview"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="userlocation">Location:</label>
+                    <input type="text" id="userlocation" placeholder="Enter location or area name" required>
+                    <button type="button" id="getLocationBtn" class="location-btn">📍 Get Current Location</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="reporterName">Your Name:</label>
+                    <input type="text" id="reporterName" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="SubmitButton">
+                <button type="submit" class="submit-btn">Submit Issue Report</button>
+                </div>
+             
+
+                <div class="popUp">
+                     <div class="box1">
+                      ✅Successfully Submitted.
+                     </div>
+                        <div class="box2">
+                        <p>Your issue will be resolved as soon as possible.</p>
+                     </div>
+                     <div class="btn">
+                       <button type="button" class="btn btn-success">Okay</button>
+                     </div>
+                </div>        
+
+     </section>
+
+
+
+     <section class="issues-section">
+            <h2>Reported Issues</h2>
+            
+            <div id="issuesList" class="issues-list"></div>
+        </section>
+    </main>
+
+    <!-- <footer>
+        <div class="footer">
+            <p>&copy; 2025 FixMyCity. Making communities better together.</p>
+        </div>
+    </footer> -->
+
+</div>
+
+     
+                  
+
+    <script src="script.js"></script>
+</body>
+</html>
