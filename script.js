@@ -23,10 +23,6 @@ document.getElementById("issueForm").addEventListener("submit", function(event) 
     }
 });
 
-
-
-
-
 // Load from localStorage
 let issues = JSON.parse(localStorage.getItem("issues")) || [];
 let issueIdCounter = parseInt(localStorage.getItem("issueIdCounter")) || 1;
@@ -159,15 +155,6 @@ function displayIssues() {
     </div>
   </div>
 `;
-
-
-
-
-
-
-
-
-
 
     issuesList.appendChild(card);
   });
