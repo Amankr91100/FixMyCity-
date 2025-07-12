@@ -56,27 +56,20 @@
                     <label for="reporterName">Your Name:</label>
                     <input type="text" id="reporterName" placeholder="Enter your name" required>
                 </div>
+
+                <div class="form-group">
+                     <label for="Aadhar">Aadhar Number:</label>
+                     <input type="text" id="Aadhar" placeholder="Enter your Aadhar No." 
+                      pattern="\d{12}" maxlength="12" class="form-control" required >
+                </div>
                 
                 <div class="SubmitButton">
                 <button type="submit" class="submit-btn">Submit Issue Report</button>
-                </div>
-             
-
-                <div class="popUp">
-                     <div class="box1">
-                      ✅Successfully Submitted.
-                     </div>
-                        <div class="box2">
-                        <p>Your issue will be resolved as soon as possible.</p>
-                     </div>
-                     <div class="btn">
-                       <button type="button" class="btn btn-success">Okay</button>
-                     </div>
-                </div>        
+                </div>    
 
      </section>
 
-
+             
 
      <section class="issues-section">
             <h2>Reported Issues</h2>
@@ -93,7 +86,17 @@
 
 </div>
 
-     
+                <div class="popUp">
+                     <div class="box1">
+                      ✅Successfully Submitted.
+                     </div>
+                        <div class="box2">
+                        <p>Your issue will be resolved as soon as possible.</p>
+                     </div>
+                     <div class="btn">
+                       <button type="button" class="btn btn-success">Okay</button>
+                     </div>
+                </div>    
                   
 
     <script src="script.js"></script>
