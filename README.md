@@ -22,6 +22,9 @@ FixMyCity is a simple, responsive web application built using **HTML**, **CSS**,
 4. Submit to add your report to the community feed.
 5. View and upvote issues on the homepage.
 
+<img width="636" height="569" alt="Screenshot 2025-07-31 181350" src="https://github.com/user-attachments/assets/937c2962-c991-4274-a924-c98dac29c583" />
+
+
 🛠️ Technologies
 
 * 🧱 **HTML** for semantic markup
@@ -29,13 +32,6 @@ FixMyCity is a simple, responsive web application built using **HTML**, **CSS**,
 * 🧠 **JavaScript (ES6+)** for dynamic functionality
 * 💾 **LocalStorage** for data persistence
 * 📍 **Geolocation API** for capturing user location
-
-## 🛣️ Roadmap
-
-* 🔒 Add backend integration (Firebase / MongoDB)
-* 🧑‍💼 User authentication
-* 💬 Comment system on issues
-* 📊 Issue status tracking (Open, In Progress, Resolved)
 
 
 Made with ❤️ for a better city! 🏙️
